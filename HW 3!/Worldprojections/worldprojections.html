@@ -8,28 +8,60 @@
 <body>
     <h1>In this project I learned how to display images in different projections</h1>
     
-    <h2 style="color:red">Describe in your own words how you displayed the map in different projections using QGIS</h2>
-    <p>You can write a paragraph here</p>
+    <p>These maps were displayed using QGIS and altering the projections for each map using the Project Coordinate Reference System. We demonstrated how different projections in maps, whether cyllindrical, conic, or azimuthal, portrays the world diffferently. We can show how different maps can optimize one element such as shape, area, angle, direction, or distance, and the trade offs that come with prioritizing certain elements. </p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This is an Equivalent map because it conserves area. The poles are stretched and distorted in order to preserve this area. </h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
     <h2>Aitoff Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This is an Azimuthal projection that preserves distance. It is an ellipse and as you get further away from the center the circles begin to deform and stretch out. The most stretched caps are furthest away from the equator.</h3>
     <a href=".//maps/54043.png">
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
-    <h2>___ Projection</h2>
-    <h3>Some observations</h3>
+    <h2>EPSG Projection</h2>
+    <h3>The Psuedo Mercator Map preserves the shape of the maps. You can tell it preserves shape because the circles of the caps are all still circles. Towards the poles the circles get larger because the map distorts area.</h3>
     <a href="./maps/3857.png">
     <img src="./maps/3857.png" alt="Aitoff" width='500px'>
     </a>
+    <h2>ESRI Projection</h2>
+    <h3>The Winkel Tripel projection is a cylindrical projection that preserves more area and scale because the cap circles remain the same size up to the poles, however, there is clear distortion in shape since the caps become more ellipsoids.</h3>
+    <a href="./maps/53018.png">
+    <img src="./maps/53018.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI Projection</h2>
+    <h3>This is an Equivalent cylindrical map. The caps towards the poles are so stretched and shape is clearly distorted in order to preserve this area. This is used to keep the actual sizes of the land masses its portraying.</h3>
+    <a href="./maps/54034.png">
+    <img src="./maps/54034.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI Projection</h2>
+    <h3>This map is an equidistant, conic projection. Equidistant means that it preserves distance in one direction. This map is good for navigational purposes like for a ship traveling through the sea. Additionally this is a conic map meaning its features were created using a cone. Conic maps distort area.</h3>
+    <a href="./maps/54027.png">
+    <img src="./maps/54027.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI Projection</h2>
+    <h3>This is an Azimuthal projection meaning it is centered arouund a central point which for this map is the North Pole. This is also an equidistant map which preserves distance and direction from that central point but only in one direction. Otherwise, azimuthal projections distrot shapes and sizes.</h3>
+    <a href="./maps/102016.png">
+    <img src="./maps/102016.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI Projection</h2>
+    <h3> This is the first projection I chose for this project. This is a Gnomonic map meaning it is centered around the North Pole.</h3>
+    <h3> The map is an Azimuthal Map Projection the preserves angle and distance is only preserved at the center point with all other dimensions also being distorted. This is best used for navigational purposes.</h3>
+    <h4>The information I used to learn about this map is linked down below.</h4>
+    <a href="./maps/102034.png">
+    <img src="./maps/102034.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>ESRI Projection</h2>
+    <h3>This is my second projection I was able to pick out for this project. I picked it because I thought it was interesting the way the graticule lines formed a hexagon. This is an Eckert I projection is called a psuedocylindrical projection. Meridians are even with the equator in the middle. Shape, area, distance and direction are all distorted and this map has no clear use in mapping. </h3>
+    <a href="./maps/53015.png">
+    <img src="./maps/53015.png" alt="Aitoff" width='500px'>
     <h2 style="color:red">Now, you should <u>add the following projections on your own:</u></h2>
     <h3>EPSG: 3857, 53018, 54034, 54027, 102016, and two additional projections that you choose.</h3>
     <p></p>
     <h2>Data used for this project</h2>
     <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+
+    <p><a href="https://pro.arcgis.com/en/pro-app/latest/help/mapping/properties/gnomonic.htm"> Information on the Gnomonic Projection was found through this link </a></p>
 </body>
 </html>
